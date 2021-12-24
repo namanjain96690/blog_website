@@ -1,0 +1,248 @@
+:root{
+    --bg-size:100% 100%;
+    --main-color: #fff;
+    --btn-color: #bbe1fs;
+    --btn-font-color: #000;
+    --btn-font:1.5rem;
+    --eff: .3s;
+}
+
+html{
+      font-size: 62.5%;
+
+}
+
+p, label, input::placeholder{
+    font-size: 1.9rem;
+    line-height: 170%;
+    color: #6c757d;
+}
+
+.card-img, .fas{
+    transition: var(--eff);
+}
+
+a, align-self:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+body{
+    background: hsl(84, 3%, 94%);
+}
+
+.main_heading{
+    font-weight: bold;
+    font-size: 5rem;
+    color: #000;
+}
+
+.main_heading__para{
+    font-size: 2.2rem;
+}
+
+.main_header__div{
+    height: calc(100vh - 50vh);
+    background-image: linear-gradient(to right, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0)),url(img/2.jpg);
+    background-size: var(--bg-size);
+    overflow: hidden;
+}
+
+.main_header__div p{
+    font-weight: bold;
+    font-size: 3.5rem;
+    color: var(--main-color);
+}
+.main_header__div h2{
+    font-size: 5rem;
+    font-weight: bold;
+    color:var(--main-color);
+    position: relative;
+    padding-bottom: 2rem;
+    transition: var(--eff);
+}
+.main_header__div div li{
+    font-weight: bold;
+    padding: 0 1rem;
+    height: 4.5rem;
+    margin-bottom: 4.5rem;
+    display: block;
+}
+.animateword div{
+    overflow: hidden;
+    position: relative;
+    float: right;
+    height: 9rem;
+} 
+.flip{
+     animation: flip4 10s cubic-bezier(0.23, 1, 0.320, 1) infinite;
+}
+@keyframes flip4 {
+    0%{
+        margin-top: -360px;
+    }
+    5%{
+        margin-top: -270px;
+    }
+    25%{
+        margin-top: -270px;
+    }
+    30%{
+        margin-top: -180px;
+    }
+    50%{
+        margin-top: -180px;
+    }
+    55%{
+        margin-top: -90px;
+    }
+    75%{
+        margin-top: -90px;
+    }
+    80%{
+        margin-top: 0px;
+    }
+    99.99%{
+        margin-top: 0px;
+    }
+
+}
+button,.card-img{
+    transition: var(--eff);
+}
+button:hover,.card-img:hover,.tags_main a:hover,.right_sub__div a:hover{
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1rem 3rem -1rem rgba(255,255,255,0.7);
+}
+
+.blog_left__div .main_heading{
+font-size: 3rem;
+}
+.blog_left__div .main_heading__para{
+    font-weight: 400;
+    font-size: 2.2rem;
+}
+
+.blog_left__div p{
+    font-size: 2rem;
+    font-weight: 500;
+}
+button{
+    font-size: 2rem !important;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+.replies{
+    margin: 1rem 0;
+    padding: 1rem 0;
+    transition: var(--eff);
+    display: none;
+}
+.show{
+    margin: 20px 0;
+    transition: var(--eff);
+    display: block;
+}
+
+.about_me__div{
+    width: auto;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-image: linear-gradient(to bottom, transparent 50%, rgba(204,207,208,0.8) 50%), url('img/3.jpeg');
+    background-size: var(--bg-size);
+}
+
+.about_me__div p:first-child{
+    /* padding-bottom: 0.2rem; */
+    font-size: 2.2rem;
+}
+.about_me__div p{
+    font-size: 1.8rem;
+    /* padding: 1rem; */
+    color: #000;
+}
+
+.right_div__title{
+    background-color: #d0cecf;
+    box-shadow: 0 1rem 3rem -1rem rgba(255,255,255,0.7);
+}
+.right_div__title h2{
+    font-size: 2.5rem !important;
+    padding-left: 2rem !important;
+}
+.popular_post__img1 img{
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    height: 9rem;
+    box-sizing: border-box !important;
+}
+
+.tags_main a{
+    font-size: 1.7rem;
+    line-height: 170%;
+    font-weight: lighter;
+    background-color: #6c757d;
+    transition: var(--eff);
+}
+.tags_main a:hover{
+    background-color: var(--btn-color);
+    transition: var(--eff);
+}
+.right_sub__div{
+    padding: 2rem;
+    background-color: #fff;
+}
+.tags_main{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(4rem,8rem));
+    grid-gap: 0.5rem;
+}
+
+.right_sub__div a .fab{
+    color: #000;
+} 
+
+.right_sub__div .fab:hover{
+    color: #6c757d;
+    transform: rotate(360deg);
+    transition: transform 1s;
+}
+.advertise_img{
+    min-width: 100px;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    padding: 2rem !important;
+    text-align: center;
+    font-size: 2rem !important;
+}
+
+input:hover{
+    transform: scale(1.1);
+    transition: 200ms;
+}
+
+
+
+@media (max-width:510px) {
+    .main_header__div h2{
+      font-size: 3.5rem;
+    }
+    .main_header__div{
+        height: calc(100vh - 50vh);
+    }
+}
+@media (max-width:370px) {
+    .main_header__div h2{
+      font-size: 2.9rem;
+    }
+    .main_header__div{
+        height: calc(100vh -55vh);
+    }
+} 
